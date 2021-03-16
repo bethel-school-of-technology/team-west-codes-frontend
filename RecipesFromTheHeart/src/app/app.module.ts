@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuBarComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
