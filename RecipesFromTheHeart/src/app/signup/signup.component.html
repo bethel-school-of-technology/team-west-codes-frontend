@@ -1,9 +1,11 @@
 <div class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Tabs Titles -->
-      <h2 class="inactive underlineHover"  routerLink="login" routerLinkActive="active"> Sign In </h2>
-      <h2 class="activer">Sign Up </h2>
-  
+      <nav>
+      <a class="inactive underlineHover" routerLink="login" routerLinkActive="active">Sign In</a>
+      <h2 class="active">Sign Up</h2>
+      </nav>
+      
       <!-- Icon -->
       <div class="fadeIn first">
         <img src="../assets/images/Logo 9.jpg" id="icon" alt="User Icon" />
@@ -11,8 +13,9 @@
   
       <!-- Signup Form -->
       <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="create login">
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="create password">
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="confirm password">
         <input type="submit" class="fadeIn fourth" value="Log In">
       </form>
   
