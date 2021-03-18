@@ -7,12 +7,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    MenuBarComponent
   ],
   imports: [
     BrowserModule,

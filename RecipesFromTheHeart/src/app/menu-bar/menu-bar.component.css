@@ -1,0 +1,81 @@
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .w3-container {
+      width:100%;
+    }
+}
+
+#header .container {
+    height: auto !important;
+    position: relative;
+}
+.container {
+    min-width: 300px;
+    max-width: 1108px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+div {
+    display: block;
+}
+
+.dropbtn{
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.dropdown{
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content{
+display: none;
+position: absolute;
+right: 0;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #971d1d;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+}
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.w3-circle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
