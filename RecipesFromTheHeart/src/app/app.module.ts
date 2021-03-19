@@ -15,6 +15,7 @@ import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
   declarations: [
     AppComponent,
     MenuBarComponent,
+    viewRecipe,
     LoginComponent,
     SignupComponent,
     HomePageComponent,
