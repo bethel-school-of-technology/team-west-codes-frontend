@@ -7,6 +7,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     MenuBarComponent,
     HomePageComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ViewRecipeComponent
   ],
   imports: [
     BrowserModule,

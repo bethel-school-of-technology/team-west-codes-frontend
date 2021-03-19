@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head><meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://kit.fontawesome.com/59fd75f95f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block" rel="stylesheet">
 </head>
 <body>
-    <div class="w3-container w3-margin">
-        <h5 class="w3-bar w3-light-grey w3-large" style="width: auto;">
+  
+    <div class="topnav active w3-container w3-top w3-light-grey">
+        <div class="w3-bar w3-wide w3-padding w3-card" style="max-width: 1200px; margin: auto;">
+        
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <img class="w3-circle w3-left" style="width:100px;" alt="Recipes from the heart Logo" src="../assets/images/Logo 9.jpg"/>
+            <nav class="w3-light-grey w3-center" id="myLinks">
 
-            <img class="w3-circle w3-left" style="width:200px;" alt="Recipes from the heart Logo" src="../assets/images/Logo 9.jpg"/>
-            
-            <h4 class="w3-light-grey w3-center">
-                <a href="#" class="w3-bar-item w3-button">Home</a>
-                <a href="#" class="w3-bar-item w3-button">About Us</a>
-                <a href="#" class="w3-bar-item w3-button">Breakfast</a>
-                <a href="#" class="w3-bar-item w3-button">Lunch</a>
-                <a href="#" class="w3-bar-item w3-button">Dinner</a>
-            </h4>
-            
-            <div class="dropdown w3-right">
-                <img src="../assets/images/img_avatar1.png" alt="Avatar" class="avatar w3-circle">
-                <div class="dropdown-content">
-                    <a href="#">Sign In</a>
-                    <a href="#">Favorites</a>
-                    <a href="#">Logout</a>
+                <a href="#home" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Home</a>
+                <a href="#breakfast" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Breakfast</a>
+                <a href="#lunch" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Lunch</a>
+                <a href="#dinner" class="w3-bar-item w3-button w3-padding-16 w3-hide-small">Dinner</a>
+                
+                <div class="w3-center">
+                    <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+                    <button class="w3-bar-item w3-button w3-black w3-mobile w3-center">Go</button>
                 </div>
-            </div> 
-            <h5 class="w3-container w3-right">
-                <input type="text" class="w3-bar-item w3-input w3-white w3-mobile w3-center" placeholder="Search..">
-                <button class="w3-bar-item w3-button w3-black w3-mobile w3-center">Go</button>
-            </h5>
-        </h5>
+
+                
+                
+                <div class="dropdown w3-right">
+                    <img src="../assets/images/img_avatar1.png" alt="Avatar" class="avatar w3-circle dropbtn fa fa-caret-down">
+                    <div class="dropdown-content">
+                      <a href="#">Sign in</a>
+                      <a href="#">Create New Account</a>
+                      <a href="#">Logout</a>
+                    </div>
+                </div>
+                
+            </nav>
+        </div>
     </div>
+    
+    <div id="nav1" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+        <a href="#breakfast" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Breakfast</a>
+        <a href="#lunch" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Lunch</a>
+        <a href="#dinner" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Dinner</a>
+    </div>
+    
+
+    <script>
+   // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+    // Close the dropdown if the user clicks outside of it
+    
+    if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+    }
+    
+
+    
+    </script>
 </body>
 
 
 
 
 
-
+<!-- function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}   
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+} -->
 
 
 
