@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
@@ -10,6 +9,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
     HomePageComponent,
     FooterComponent,
     AboutComponent,
-    ViewRecipeComponent
+    ViewRecipeComponent,
+    MainPageComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
