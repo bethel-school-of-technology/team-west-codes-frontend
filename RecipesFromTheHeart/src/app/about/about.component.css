@@ -4,3 +4,24 @@
     margin: 0 auto;
     padding: 0 10px;
 }
+
+* {
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: large;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color:#E8F8F5;
+  }
+
+  .display-3 {
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: xx-large;
+  }
+
+  .card-title {
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: xx-large;
+  }
