@@ -13,10 +13,11 @@
   
       <!-- Signup Form -->
       <form>
-        <input type="text" id="username" class="fadeIn second" name="login" placeholder="create username">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="create password">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="confirm password">
+        <input type="text" id="username" class="fadeIn second" name="login" placeholder="create username" required>
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="create password" required>
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="confirm password" required>
         <input type="submit" class="fadeIn fourth" value="Log In">
+        <input type="button" class="fadeIn fourth" value="Cancel" [routerLink]="['/']" routerLinkActive="active">
       </form>
   
   </div>
