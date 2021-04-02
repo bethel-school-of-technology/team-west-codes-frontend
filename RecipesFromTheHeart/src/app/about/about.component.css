@@ -12,12 +12,14 @@
     box-sizing: border-box;
     margin-top: 10px;
     background-color:#E8F8F5;
+    text-align: center;
   }
 
   .display-3 {
     font-family: sans-serif;
     font-style: bold;
     font-size: xx-large;
+    text-align: center;
   }
 
   .card-title {
@@ -25,3 +27,8 @@
     font-style: bold;
     font-size: xx-large;
   }
+
+  .page {
+    text-align: center;
+  }
+
