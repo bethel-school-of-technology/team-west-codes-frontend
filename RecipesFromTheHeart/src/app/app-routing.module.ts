@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
-
-import { FooterComponent } from './footer/footer.component';
-import { HomePageComponent } from './home-page/home-page.component';
-
-import { MenuBarComponent } from './menu-bar/menu-bar.component';
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { LunchComponent } from './lunch/lunch.component';
 import { BreakfastComponent } from './breakfast/breakfast.component';
 import { DinnerComponent } from './dinner/dinner.component';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { LoginComponent } from './login/login.component';
+import { LunchComponent } from './lunch/lunch.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
+
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent},
@@ -26,8 +26,8 @@ const routes: Routes = [
   { path: 'menubar', component: MenuBarComponent },
   { path: 'login', component: LoginComponent },
   { path: 'viewrecipe', component: ViewRecipeComponent},
-  { path: 'signup', component: SignupComponent }
-  
+  { path: 'signup', component: SignupComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({
