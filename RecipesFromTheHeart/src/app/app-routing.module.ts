@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'favoriteslist', component: FavoritesListComponent},
   { path: 'footer', component: FooterComponent},
   { path: 'homepage', component: HomePageComponent },
-  { path: '', redirectTo: "/home", pathMatch:"full"},
+  { path: '', redirectTo: "/homepage", pathMatch:"full"},
   { path: 'menubar', component: MenuBarComponent },
   { path: 'login', component: LoginComponent },
   { path: 'viewrecipe', component: ViewRecipeComponent},
