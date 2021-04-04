@@ -5,11 +5,12 @@
     box-sizing: border-box;
     margin-top: 10px;
     text-align: center;
+    background-color:#F4F6F6;
   }
 
 .container {
     min-width: 300px;
-    max-width: 1108px;
+    /* max-width: 1108px; */
     margin: 0 auto;
     padding: 0 10px;
 }
