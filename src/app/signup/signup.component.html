@@ -1,0 +1,27 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <nav>
+      <h2><a class="inactive underlineHover" [routerLink]="['/login']" routerLinkActive="active">Sign In</a></h2>
+      <h2 class="active">Sign Up</h2>
+      </nav>
+      
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../assets/images/Logo 9.jpg" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Signup Form -->
+      <form (ngSubmit)="signUp()">
+        <input type="text" id="fname" class="fadeIn second" name="login" placeholder="First name" required [(ngModel)]="newUser.FirstName">
+        <input type="text" id="lname" class="fadeIn second" name="login" placeholder="Last name" required [(ngModel)]="newUser.LastName">
+        <input type="text" id="email" class="fadeIn second" name="login" placeholder="Email" required [(ngModel)]="newUser.Email">
+        <input type="text" id="username" class="fadeIn second" name="login" placeholder="Username" required [(ngModel)]="newUser.Username">
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" required>
+        <input type="text" id="password" class="fadeIn third" name="login" placeholder="confirm password" required [(ngModel)]="newUser.Password">
+        <input type="submit" class="fadeIn fourth" value="Sign Up">
+        <input type="button" class="fadeIn fourth" value="Cancel" [routerLink]="['/']" routerLinkActive="active">
+      </form>
+  
+  </div>
+  <router-outlet></router-outlet>
