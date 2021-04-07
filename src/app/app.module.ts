@@ -14,6 +14,9 @@ import { DinnerComponent } from './dinner/dinner.component';
 import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 import { ViewRecipeComponent } from './view-recipe/view-recipe.component';
 import { ProfileComponent } from './profile/profile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';  
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

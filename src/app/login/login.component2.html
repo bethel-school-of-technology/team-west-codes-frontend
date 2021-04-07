@@ -2,7 +2,7 @@
     <div id="formContent">
       <!-- Tabs Titles -->
       <nav>
-      <h2 class="active"> Log In </h2>
+      <h2 class="active"> Sign In </h2>
       <h2><a class="inactive underlineHover" [routerLink]="['/signup']" routerLinkActive="active">Sign Up</a></h2>
       </nav>
       
@@ -13,8 +13,8 @@
   
       <!-- Login Form -->
       <form>
-        <input type="text" id="username" class="fadeIn second" name="username" placeholder="username" required>
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" required>
+        <input type="Username" id="username" class="fadeIn second" name="Username" placeholder="username" required>
+        <input type="Password" id="password" class="fadeIn third" name="Password" placeholder="password" required>
         <input type="submit" class="fadeIn fourth" value="Log In">
         <input type="button" class="fadeIn fourth" value="Cancel" [routerLink]="['/']" routerLinkActive="active">
       </form>
