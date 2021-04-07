@@ -27,7 +27,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'viewrecipe', component: ViewRecipeComponent},
   { path: 'signup', component: SignupComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: "**", redirectTo: "404"}
 ];
 
 @NgModule({
