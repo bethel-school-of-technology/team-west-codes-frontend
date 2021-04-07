@@ -1,4 +1,7 @@
 export class Users {
+    static UserId(UserId: any) {
+      throw new Error('Method not implemented.');
+    }
     UserId: Number;
     FirstName: String;
     LastName: String;
