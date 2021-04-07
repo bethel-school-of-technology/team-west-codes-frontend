@@ -20,7 +20,8 @@ export class ProfileComponent implements OnInit {
     } else {
     this.authService.getProfile().subscribe(userres => {
       console.log(userres)
-      this.currentUser = userres.Username;
+      this.currentUser = userres.user;
+      console.log(this.currentUser)
       })
     }
   }
