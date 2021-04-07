@@ -33,7 +33,8 @@
                     <div class="dropdown-content">
                       <a routerLink="login" routerLinkActive="active">Log In</a>
                       <a routerLink="signup" routerLinkActive="active">Create New Account</a>
-                      <a href="#">Log Out</a>
+                      <a *ngIf="getToken()" routerLink="profile" routerLinkActive="active">My Profile</a>
+                      <a *ngIf="getToken()" ><button (click)="logout()">Logout</button></a>
                     </div>
                 </div>
                 
