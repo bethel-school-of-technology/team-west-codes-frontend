@@ -41,7 +41,7 @@ export class AuthService {
     }
     return this.myHttp.get(this.userEndpoint + "/profile", {headers: appHeaders});
   }
-
+/*
   getToken() {
     return localStorage.getItem('access_token');
   }
@@ -81,4 +81,5 @@ export class AuthService {
     }
     return throwError(msg);
   }
+  */
 }
