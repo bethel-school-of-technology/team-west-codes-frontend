@@ -14,7 +14,7 @@
       <!-- Login Form -->
       <form (ngSubmit)="signIn()">
         <input type="text" id="username" class="fadeIn second" name="username" placeholder="username" required [(ngModel)]="loginForm.Username">
-        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password" required [(ngModel)]="loginForm.Password">
+        <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" required [(ngModel)]="loginForm.Password">
         <input type="submit" class="fadeIn fourth" value="Log In">
         <input type="button" class="fadeIn fourth" value="Cancel" [routerLink]="['/']" routerLinkActive="active">
       </form>
