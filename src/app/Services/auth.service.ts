@@ -41,7 +41,7 @@ export class AuthService {
     }
     return this.myHttp.get(this.userEndpoint + "/profile", {headers: appHeaders});
   }
-
+/*
   getToken() {
     return localStorage.getItem('access_token');
   }
@@ -60,7 +60,7 @@ export class AuthService {
 
   // User profile
   getUserProfile(id): Observable<any> {
-    let api = `${this.userEndpoint}/users/profile/${id}`;
+    let api = `${this.userEndpoint}/profile/${id}`;
     return this.myHttp.get(api, { headers: this.headers }).pipe(
       map((res: Response) => {
         return res || {}
@@ -81,4 +81,5 @@ export class AuthService {
     }
     return throwError(msg);
   }
+  */
 }
