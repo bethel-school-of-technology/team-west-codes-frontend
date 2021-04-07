@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
       window.alert("You're not logged in. Please login to continue");
       this.reRouter.navigate(["/login"])
     } else {
-    this.authService.getUserProfile().subscribe(userres => {
+    this.authService.getUserProfile(this.currentUser.UserId).subscribe(userres => {
       console.log(userres)
       this.currentUser = userres.UserId;
       })
