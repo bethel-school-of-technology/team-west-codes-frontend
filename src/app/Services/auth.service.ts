@@ -59,7 +59,7 @@ export class AuthService {
   }
 
   // User profile
-  getUserProfile(id): Observable<any> {
+  getUserProfile(id: undefined): Observable<any> {
     let api = `${this.userEndpoint}/users/profile/${id}`;
     return this.myHttp.get(api, { headers: this.headers }).pipe(
       map((res: Response) => {

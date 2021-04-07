@@ -1,4 +1,5 @@
 export class Users {
+    id!: Number;
     UserId: Number;
     FirstName: String;
     LastName: String;
